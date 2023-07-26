@@ -15,89 +15,73 @@ $font-family_1: "DiabloHeavy", sans-serif;
 .font-diablo {
   font-family: $font-family_1;
 }
-.hero-barbarian {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
-.hero-witch-doctor {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
-.hero-demon-hunter {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
-.hero-wizard {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
-.hero-monk {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
-.hero-necromancer {
-  background-image: url("../img/heroes-faces.png");
-  background-size: 203%;
-  width: 136px;
-  height: 106px;
-}
+.hero-barbarian,
+.hero-witch-doctor,
+.hero-demon-hunter,
+.hero-wizard,
+.hero-monk,
+.hero-necromancer,
 .hero-crusader {
   background-image: url("../img/heroes-faces.png");
   background-size: 203%;
   width: 136px;
   height: 106px;
 }
-.hero-barbarian.male {
-  background-position: 0 0;
+.hero-barbarian {
+  &.male {
+    background-position: 0 0;
+  }
+  &.female {
+    background-position: 100% 0;
+  }
 }
-.hero-barbarian.female {
-  background-position: 100% 0;
+.hero-witch-doctor {
+  &.male {
+    background-position: 0 16.538462%;
+  }
+  &.female {
+    background-position: 100% 16.538462%;
+  }
 }
-.hero-witch-doctor.male {
-  background-position: 0 16.538462%;
+.hero-demon-hunter {
+  &.male {
+    background-position: 0 33.247754%;
+  }
+  &.female {
+    background-position: 100% 33.247754%;
+  }
 }
-.hero-witch-doctor.female {
-  background-position: 100% 16.538462%;
+.hero-wizard {
+  &.male {
+    background-position: 0 50%;
+  }
+  &.female {
+    background-position: 100% 50%;
+  }
 }
-.hero-demon-hunter.male {
-  background-position: 0 33.247754%;
+.hero-monk {
+  &.male {
+    background-position: 0 66.666667%;
+  }
+  &.female {
+    background-position: 100% 66.666667%;
+  }
 }
-.hero-demon-hunter.female {
-  background-position: 100% 33.247754%;
+.hero-necromancer {
+  &.male {
+    background-position: 0 83.333333%;
+  }
+  &.female {
+    background-position: 100% 83.333333%;
+  }
 }
-.hero-wizard.male {
-  background-position: 0 50%;
-}
-.hero-wizard.female {
-  background-position: 100% 50%;
-}
-.hero-monk.male {
-  background-position: 0 66.666667%;
-}
-.hero-monk.female {
-  background-position: 100% 66.666667%;
-}
-.hero-necromancer.male {
-  background-position: 0 83.333333%;
-}
-.hero-necromancer.female {
-  background-position: 100% 83.333333%;
-}
-.hero-crusader.male {
-  background-position: 0 100%;
-}
-.hero-crusader.female {
-  background-position: 100% 100%;
+.hero-crusader {
+  &.male {
+    background-position: 0 100%;
+  }
+  &.female {
+    background-position: 100% 100%;
+  }
 }
 .act {
   background-image: url("../img/progress.png");
@@ -198,36 +182,12 @@ $font-family_1: "DiabloHeavy", sans-serif;
   }
 }
 @media (min-width: 576px) {
-  .hero-barbarian {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
-  .hero-witch-doctor {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
-  .hero-demon-hunter {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
-  .hero-wizard {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
-  .hero-monk {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
-  .hero-necromancer {
-    background-size: 200%;
-    width: 100%;
-    height: 115px;
-  }
+  .hero-barbarian,
+  .hero-witch-doctor,
+  .hero-demon-hunter,
+  .hero-wizard,
+  .hero-monk,
+  .hero-necromancer,
   .hero-crusader {
     background-size: 200%;
     width: 100%;
@@ -235,70 +195,34 @@ $font-family_1: "DiabloHeavy", sans-serif;
   }
 }
 @media (min-width: 768px) {
-  .hero-barbarian {
-    height: 161px;
-  }
-  .hero-witch-doctor {
-    height: 161px;
-  }
-  .hero-demon-hunter {
-    height: 161px;
-  }
-  .hero-wizard {
-    height: 161px;
-  }
-  .hero-monk {
-    height: 161px;
-  }
-  .hero-necromancer {
-    height: 161px;
-  }
+  .hero-barbarian,
+  .hero-witch-doctor,
+  .hero-demon-hunter,
+  .hero-wizard,
+  .hero-monk,
+  .hero-necromancer,
   .hero-crusader {
     height: 161px;
   }
 }
 @media (min-width: 992px) {
-  .hero-barbarian {
-    height: 143px;
-  }
-  .hero-witch-doctor {
-    height: 143px;
-  }
-  .hero-demon-hunter {
-    height: 143px;
-  }
-  .hero-wizard {
-    height: 143px;
-  }
-  .hero-monk {
-    height: 143px;
-  }
-  .hero-necromancer {
-    height: 143px;
-  }
+  .hero-barbarian,
+  .hero-witch-doctor,
+  .hero-demon-hunter,
+  .hero-wizard,
+  .hero-monk,
+  .hero-necromancer,
   .hero-crusader {
     height: 143px;
   }
 }
 @media (min-width: 1200px) {
-  .hero-barbarian {
-    height: 174px;
-  }
-  .hero-witch-doctor {
-    height: 174px;
-  }
-  .hero-demon-hunter {
-    height: 174px;
-  }
-  .hero-wizard {
-    height: 174px;
-  }
-  .hero-monk {
-    height: 174px;
-  }
-  .hero-necromancer {
-    height: 174px;
-  }
+  .hero-barbarian,
+  .hero-witch-doctor,
+  .hero-demon-hunter,
+  .hero-wizard,
+  .hero-monk,
+  .hero-necromancer,
   .hero-crusader {
     height: 174px;
   }
